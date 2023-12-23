@@ -37,7 +37,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.pictureBoxLock_IME = new System.Windows.Forms.PictureBox();
             this.pictureBoxUser_IME = new System.Windows.Forms.PictureBox();
             this.panelMenuUp_IME = new System.Windows.Forms.Panel();
-            this.labelAuto_IME = new System.Windows.Forms.Label();
+            this.labelRegister_IME = new System.Windows.Forms.Label();
             this.panelMenu_IME.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLock_IME)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUser_IME)).BeginInit();
@@ -79,6 +79,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.buttonIn_IME.TabIndex = 3;
             this.buttonIn_IME.Text = "Войти";
             this.buttonIn_IME.UseVisualStyleBackColor = false;
+            this.buttonIn_IME.Click += new System.EventHandler(this.buttonIn_IME_Click);
             // 
             // textBoxParol_IME
             // 
@@ -124,27 +125,27 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // panelMenuUp_IME
             // 
             this.panelMenuUp_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(8)))), ((int)(((byte)(24)))));
-            this.panelMenuUp_IME.Controls.Add(this.labelAuto_IME);
+            this.panelMenuUp_IME.Controls.Add(this.labelRegister_IME);
             this.panelMenuUp_IME.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelMenuUp_IME.Location = new System.Drawing.Point(0, 0);
             this.panelMenuUp_IME.Name = "panelMenuUp_IME";
             this.panelMenuUp_IME.Size = new System.Drawing.Size(428, 100);
             this.panelMenuUp_IME.TabIndex = 0;
             // 
-            // labelAuto_IME
+            // labelRegister_IME
             // 
-            this.labelAuto_IME.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.labelAuto_IME.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.labelAuto_IME.Font = new System.Drawing.Font("Comic Sans MS", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelAuto_IME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
-            this.labelAuto_IME.Location = new System.Drawing.Point(0, 0);
-            this.labelAuto_IME.Name = "labelAuto_IME";
-            this.labelAuto_IME.Size = new System.Drawing.Size(428, 100);
-            this.labelAuto_IME.TabIndex = 0;
-            this.labelAuto_IME.Text = "Авторизация";
-            this.labelAuto_IME.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.labelAuto_IME.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelAuto_IME_MouseDown);
-            this.labelAuto_IME.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelAuto_IME_MouseMove);
+            this.labelRegister_IME.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.labelRegister_IME.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelRegister_IME.Font = new System.Drawing.Font("Comic Sans MS", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelRegister_IME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.labelRegister_IME.Location = new System.Drawing.Point(0, 0);
+            this.labelRegister_IME.Name = "labelRegister_IME";
+            this.labelRegister_IME.Size = new System.Drawing.Size(428, 100);
+            this.labelRegister_IME.TabIndex = 0;
+            this.labelRegister_IME.Text = "Регистрация";
+            this.labelRegister_IME.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.labelRegister_IME.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelAuto_IME_MouseDown);
+            this.labelRegister_IME.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelAuto_IME_MouseMove);
             // 
             // LoginForm
             // 
@@ -170,7 +171,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
 
         private System.Windows.Forms.Panel panelMenu_IME;
         private System.Windows.Forms.Panel panelMenuUp_IME;
-        private System.Windows.Forms.Label labelAuto_IME;
+        private System.Windows.Forms.Label labelRegister_IME;
         private System.Windows.Forms.PictureBox pictureBoxUser_IME;
         private System.Windows.Forms.TextBox textBoxParol_IME;
         private System.Windows.Forms.TextBox textBoxLogin_IME;

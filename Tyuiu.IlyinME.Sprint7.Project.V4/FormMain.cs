@@ -10,13 +10,23 @@ using System.Windows.Forms;
 
 namespace Tyuiu.IlyinME.Sprint7.Project.V4
 {
-    public partial class LoginForm : Form
+    public partial class FormMain : Form
     {
-        public LoginForm()
+        public FormMain()
         {
             InitializeComponent();
         }
         Point lastPoint;
+        private void buttonClose_IME_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panelMenu_IME_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
         private void panelMenu_IME_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -26,12 +36,12 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             }
         }
 
-        private void panelMenu_IME_MouseDown(object sender, MouseEventArgs e)
+        private void panelMenuUp_IME_MouseDown(object sender, MouseEventArgs e)
         {
             lastPoint = new Point(e.X, e.Y);
         }
 
-        private void labelAuto_IME_MouseMove(object sender, MouseEventArgs e)
+        private void panelMenuUp_IME_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
             {
@@ -40,16 +50,16 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             }
         }
 
-        private void labelAuto_IME_MouseDown(object sender, MouseEventArgs e)
+        private void buttonInfo_IME_Click(object sender, EventArgs e)
         {
-            lastPoint = new Point(e.X, e.Y);
+            FormAbout formAbout = new FormAbout();
+            formAbout.ShowDialog();
         }
 
-        private void buttonIn_IME_Click(object sender, EventArgs e)
+        private void buttonStats_IME_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormMain formMain = new FormMain();
-            formMain.Show();
+            FormStats formStats = new FormStats();
+            formStats.ShowDialog();
         }
     }
 }

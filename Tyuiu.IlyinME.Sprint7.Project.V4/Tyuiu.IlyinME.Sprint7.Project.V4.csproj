@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStats.Designer.cs">
+      <DependentUpon>FormStats.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +72,15 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStats.resx">
+      <DependentUpon>FormStats.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -82,10 +109,18 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="images\211680_information_icon.ico" />
+    <Content Include="images\book.ico" />
+    <Content Include="images\chart.png" />
     <Content Include="images\computer.ico" />
     <Content Include="images\computer.png" />
+    <Content Include="images\fullscreen.png" />
+    <Content Include="images\Gojo Satoru.jpg" />
+    <Content Include="images\info.png" />
     <Content Include="images\lock.png" />
     <Content Include="images\user.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\fullscreen.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
