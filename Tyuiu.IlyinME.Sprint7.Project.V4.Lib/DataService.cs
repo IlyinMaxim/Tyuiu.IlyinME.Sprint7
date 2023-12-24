@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace Tyuiu.IlyinME.Sprint7.Project.V4.Lib
 {
@@ -23,6 +24,28 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4.Lib
             double max = arrayNumber.Max();
             return max;
         }
+        public string[,] LoadFromFileData(string filePath)
+        {
+            string fileData = File.ReadAllText(filePath, Encoding.GetEncoding(1251));
 
+            fileData = fileData.Replace('\n', '\r');
+            string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
+
+            int rows = lines.Length;
+            int colums = lines[0].Split(';').Length;
+
+            string[,] DataBase = new string[rows, colums];
+
+            for (int r = 0; r < rows; r++)
+            {
+                string[] line_r = lines[r].Split(';');
+                for (int c = 0; c < colums; c++)
+                {
+                    DataBase[r, c] = line_r[c];
+                }
+            }
+
+            return DataBase;
+        }
     }
 }
