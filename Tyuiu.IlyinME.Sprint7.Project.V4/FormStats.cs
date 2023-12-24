@@ -1,4 +1,4 @@
-using System;
+п»їusing System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,8 +17,8 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
         public FormStats()
         {
             InitializeComponent();
-            openFileDialogTask_IME.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Всефайлы(*.*)|*.*";
-            //saveFileDialogMatrix_IME.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Всефайлы(*.*)|*.*";
+            openFileDialogTask_IME.Filter = "Р—РЅР°С‡РµРЅРёСЏ, СЂР°Р·РґРµР»РµРЅРЅС‹Рµ Р·Р°РїСЏС‚С‹РјРё(*.csv)|*.csv|Р’СЃРµС„Р°Р№Р»С‹(*.*)|*.*";
+            //saveFileDialogMatrix_IME.Filter = "Р—РЅР°С‡РµРЅРёСЏ, СЂР°Р·РґРµР»РµРЅРЅС‹Рµ Р·Р°РїСЏС‚С‹РјРё(*.csv)|*.csv|Р’СЃРµС„Р°Р№Р»С‹(*.*)|*.*";
         }
         static string openFilePath;
         DataService ds = new DataService();
@@ -109,7 +109,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             }
             catch
             {
-                MessageBox.Show("Файл не выбран!", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Р¤Р°Р№Р» РЅРµ РІС‹Р±СЂР°РЅ!", "РЎРѕРѕР±С‰РµРЅРёРµ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -121,16 +121,16 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
                 {
                     string xValue = dataGridViewBooks_IME.Rows[i].Cells[1].Value.ToString();
                     int yValue = Convert.ToInt32(dataGridViewBooks_IME.Rows[i].Cells[3].Value);
-                    // Добавляем данные в график
+                    // Р”РѕР±Р°РІР»СЏРµРј РґР°РЅРЅС‹Рµ РІ РіСЂР°С„РёРє
                     chartPrice_IME.Series[0].Points.AddXY(xValue, yValue);
                 }
-                // Обновляем график
+                // РћР±РЅРѕРІР»СЏРµРј РіСЂР°С„РёРє
                 chartPrice_IME.Update();
             
             }
             catch
             {
-                MessageBox.Show("Выведите таблицу!", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Р’С‹РІРµРґРёС‚Рµ С‚Р°Р±Р»РёС†Сѓ!", "РЎРѕРѕР±С‰РµРЅРёРµ", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -168,28 +168,28 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             int xValue = maxCellValue;
             int yValue = minCellValue;
             double zValue = average;
-            // Добавляем данные в график
+            // Р”РѕР±Р°РІР»СЏРµРј РґР°РЅРЅС‹Рµ РІ РіСЂР°С„РёРє
             chartMaxMinAvg_IME.Series[0].Points.AddXY("Max(700)", maxCellValue);
             chartMaxMinAvg_IME.Series[0].Points.AddXY("Min(200)", minCellValue);
             chartMaxMinAvg_IME.Series[0].Points.AddXY("Avg(400)", average);
             
-            // Обновляем график
+            // РћР±РЅРѕРІР»СЏРµРј РіСЂР°С„РёРє
             chartMaxMinAvg_IME.Update();
         }
 
         private void buttonDone_IME_MouseEnter(object sender, EventArgs e)
         {
-            toolTipButton_IME.ToolTipTitle = "Вывод таблицы";
+            toolTipButton_IME.ToolTipTitle = "Р’С‹РІРѕРґ С‚Р°Р±Р»РёС†С‹";
         }
 
         private void buttonChart1_IME_MouseEnter(object sender, EventArgs e)
         {
-            toolTipButton_IME.ToolTipTitle = "График цена и название";
+            toolTipButton_IME.ToolTipTitle = "Р“СЂР°С„РёРє С†РµРЅР° Рё РЅР°Р·РІР°РЅРёРµ";
         }
 
         private void buttonChart2_IME_MouseEnter(object sender, EventArgs e)
         {
-            toolTipButton_IME.ToolTipTitle = "График max, min и avg цена";
+            toolTipButton_IME.ToolTipTitle = "Р“СЂР°С„РёРє max, min Рё avg С†РµРЅР°";
         }
     }
 }

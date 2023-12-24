@@ -34,18 +34,18 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4.Lib
             int rows = lines.Length;
             int colums = lines[0].Split(';').Length;
 
-            string[,] DataBase = new string[rows, colums];
+            string[,] array = new string[rows, colums];
 
             for (int r = 0; r < rows; r++)
             {
-                string[] line_r = lines[r].Split(';');
+                string[] liner = lines[r].Split(';');
                 for (int c = 0; c < colums; c++)
                 {
-                    DataBase[r, c] = line_r[c];
+                    array[r, c] = liner[c];
                 }
             }
 
-            return DataBase;
+            return array;
         }
     }
 }
