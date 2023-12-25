@@ -117,53 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="remove" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\remove.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="textBoxInstructions_IME.Text" xml:space="preserve">
+    <value>                            Руководство
+     В данной программе вы можете выполнить такие действия: 
+1. Сортировка по столбцам таблицы
+2. Сохранить измененый файл
+3. Узнать статистику по библиотеке
+4. Регистрация
+5. Добавление и удаления строк таблицы
+6. Поиск необходимых данных из таблицы
+7. Подсказки и объяснения к кнопкам</value>
   </data>
-  <data name="fullscreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fullscreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="guide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\guide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Chartmaxminavg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\Chartmaxminavg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ChartnamePrice" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\ChartnamePrice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="books" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\books.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="guide1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\guide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="table" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="guide2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\guide.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="instructions" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\instructions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAAAAAAAEAIADJBQAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAlw
+        SFlzAAALEwAACxMBAJqcGAAABXtJREFUeJzt3U3IpWMcBvCbEhlTpCYW05SFBcXCYvJRUjaKDYoFY1ZS
+        1CylRFlNWYhJVpKFZjcWqKlRspCUlcnHBlHyTcLE+Lwf02h6eWfe83Gf/8xcv19d+/PcdV3znjnPOU9r
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALOLCnlt7dvfs6znY83HPdz3f9HzY83bP3p5Hem7sObfklQJL
+        MZX+/p43e/7o+WvG/Nrzcs8dPees+LUDc9ra82TPz2320q+XL3oe7Nm8wusAZnBWz66en9ryir82n/fs
+        6DljRdcEbMAVPe+3ccVfm/09W1ZyZcBx7ew51FZX/qP5rOfq8ZcHrGf6k//PtvryH80vPbcNv0rgPx5t
+        dcU/Nr/13DL4WoFj3Nfqi39sprcg1w69YuAf23sOt/rSr830UeHFA68b4l3Q82mrL/t6OdB8RAjDPNPq
+        S36i7Bx18ZDsqjbfLb2rzlc95w86A4j1Uqsv90bz8KAzgEjTnX6Vn/fPmukbhpuGnAQE2tPqSz1rdgw5
+        CQgzfcnn61Zf6FlzYMRhQJobWn2Z58nvzX8GwsIea/Vlnjc3DzgPiPJqqy/yvNk94DwgyvS12+oiz5sX
+        B5wHxDivnVof/63Ne8s/EsixrdWXeJF8ufwjgRyXt/oSL5JDyz8SyDHdAVhd4kVyePlHAjkuafUlXiTf
+        Lv9IIMf0cI/qEi+Sj5Z/JJDl+1Zf5HnjdmBY0FutvsjzZs+A84AoT7f6Is+bewacB0S5vdUXed5sG3Ae
+        EGX6IdDpSb3VZZ417444DEi0r9UXetY8NOQkIND05J3qQs+S6QagrUNOAgJNv7V/sNUXe6N5bswxQK47
+        W32xN/qv/6WDzgBiTX8FvNbqC36iPD7qACDd9O3A6ZHc1SVfL5/0bB529UB7oNUX/f8yPSbcE4JhBV5o
+        9YVfm11Drxj41/SsgP2tvvRH430/rNj0Xvtk+MXgp5pHgkOJs3v2tpriT08qdrcfnATubav9vsD0qLKb
+        VnJlwIZc2fNGG1/+6T8gL1rRNQEzmN6L393zQVt+8V/vuX51lwLM68x25HcEXmlHPp+ft/Q/9jzfc91q
+        Xz6wLFt67up5tueddvw7CX9oR36C7Il25BuImwpeLzDQ9NfB9FXd6ZkD1/Rs77mseV8PAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAMDpqeLJvssMsIDqAhsAKFRdYAMAhaoLbACgUHWBDQAUqi6wAYBC1QU2AFCousAG
+        AE5hBgCCGQAIZgAgmAGAYAYAghkACGYAIJgBgGAGAIIZAAhmACCYAYBgBgCCGQAIZgAgmAGAYAYAghkA
+        CGYAIJgBgGAGAIIZAAhmACCYAYBgBgCCGQAIZgAgmAGAYAYAghkACGYAIJgBgGAGAIIZAAhmACCYAYBg
+        BgCCGQAIZgAgmAGAYAYAghkACGYAIJgBgGAGAIIZAAhmACCYAYBgBgCCGQAIZgAgmAGAYAYAghkACGYA
+        IJgBgGAGAIIZAAhmACCYAYBgBgCCGQAIZgAgmAGAYAYAghkACGYAIJgBgGAGAIIZAAhmACCYAYBgBgCC
+        GQAIZgAgmAGAYAYAghkACGYAIJgBgGAGAIIZAAhmACCYAYBgBgCCGQAIZgAgmAGAYAYAghkACGYAIJgB
+        gGAGAIIZAAhmACCYAYBgBgCCGQAIZgAgmAGAYAYAghkACGYAIJgBgGAGAIIZAAhmACCYAYBgBgCCGQAI
+        ZgAgmAGAYAYAghkACGYAIJgBgGAGAIIZAAhmACCYAYBTWHWBqwPRqgtYHYhWXcDqQLTqAlYHolUXsDoQ
+        rbqA1YFo1QWsDkSrLmB1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATkt/A2D7hV/uJevdAAAAAElFTkSu
+        QmCC
+</value>
   </data>
 </root>

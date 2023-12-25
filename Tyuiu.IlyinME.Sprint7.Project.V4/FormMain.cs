@@ -296,5 +296,11 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
         {
             toolTipButton_IME.ToolTipTitle = "Найти";
         }
+
+        private void buttonGuide_IME_Click(object sender, EventArgs e)
+        {
+            FormGuide formGuide = new FormGuide();
+            formGuide.ShowDialog();
+        }
     }
 }
