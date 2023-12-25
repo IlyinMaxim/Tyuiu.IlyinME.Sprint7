@@ -45,6 +45,8 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.pictureBoxAvatar_IME.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxAvatar_IME.TabIndex = 0;
             this.pictureBoxAvatar_IME.TabStop = false;
+            this.pictureBoxAvatar_IME.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxAvatar_IME_MouseDown);
+            this.pictureBoxAvatar_IME.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxAvatar_IME_MouseMove);
             // 
             // labelInfo_IME
             // 
@@ -56,6 +58,8 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.labelInfo_IME.Size = new System.Drawing.Size(384, 180);
             this.labelInfo_IME.TabIndex = 1;
             this.labelInfo_IME.Text = resources.GetString("labelInfo_IME.Text");
+            this.labelInfo_IME.MouseDown += new System.Windows.Forms.MouseEventHandler(this.labelInfo_IME_MouseDown);
+            this.labelInfo_IME.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelInfo_IME_MouseMove);
             // 
             // buttonOK_IME
             // 

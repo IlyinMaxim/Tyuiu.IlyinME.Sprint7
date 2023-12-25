@@ -24,12 +24,12 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4.Lib
             double max = arrayNumber.Max();
             return max;
         }
-        public string[,] LoadFromFileData(string filePath)
+        public string[,] LoadFromFileData(string path)
         {
-            string fileData = File.ReadAllText(filePath, Encoding.GetEncoding(1251));
+            string filePath = File.ReadAllText(path, Encoding.GetEncoding(1251));
 
-            fileData = fileData.Replace('\n', '\r');
-            string[] lines = fileData.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
+            filePath = filePath.Replace('\n', '\r');
+            string[] lines = filePath.Split(new char[] { '\r' }, StringSplitOptions.RemoveEmptyEntries);
 
             int rows = lines.Length;
             int colums = lines[0].Split(';').Length;

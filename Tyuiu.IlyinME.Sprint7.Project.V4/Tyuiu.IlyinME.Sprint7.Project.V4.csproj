@@ -116,15 +116,31 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="images\211680_information_icon.ico" />
+    <Content Include="images\add.png" />
     <Content Include="images\book.ico" />
+    <Content Include="images\books.png" />
     <Content Include="images\chart.png" />
+    <Content Include="images\Chartmaxminavg.png" />
+    <Content Include="images\ChartnamePrice.png" />
     <Content Include="images\computer.ico" />
     <Content Include="images\computer.png" />
     <Content Include="images\fullscreen.png" />
     <Content Include="images\Gojo Satoru.jpg" />
+    <Content Include="images\guide.png" />
     <Content Include="images\info.png" />
+    <Content Include="images\instructions.png" />
     <Content Include="images\lock.png" />
+    <Content Include="images\remove.png" />
+    <Content Include="images\save.png" />
+    <Content Include="images\search.png" />
+    <Content Include="images\table.png" />
     <Content Include="images\user.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\search.png" />
+    <None Include="Resources\books.png" />
+    <None Include="Resources\guide.png" />
     <None Include="Resources\info.png" />
     <None Include="Resources\fullscreen.png" />
   </ItemGroup>

@@ -47,9 +47,16 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
 
         private void buttonIn_IME_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormMain formMain = new FormMain();
-            formMain.Show();
+            if (textBoxLogin_IME.Text == "" || textBoxParol_IME.Text == "")
+            {
+                MessageBox.Show("Введите данные!", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                this.Hide();
+                FormMain formMain = new FormMain();
+                formMain.Show();
+            }
         }
     }
 }

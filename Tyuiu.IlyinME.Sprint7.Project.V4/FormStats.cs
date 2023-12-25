@@ -112,21 +112,23 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
                 MessageBox.Show("Файл не выбран!", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
+        private bool isGraphDisplayed = false;
         private void buttonChart1_IME_Click(object sender, EventArgs e)
         {
             try
             {
-                for (int i = 0; i < dataGridViewBooks_IME.RowCount; i++)
+                if (!isGraphDisplayed)
                 {
-                    string xValue = dataGridViewBooks_IME.Rows[i].Cells[1].Value.ToString();
-                    int yValue = Convert.ToInt32(dataGridViewBooks_IME.Rows[i].Cells[3].Value);
-                    // Добавляем данные в график
-                    chartPrice_IME.Series[0].Points.AddXY(xValue, yValue);
+                    for (int i = 0; i < dataGridViewBooks_IME.RowCount; i++)
+                    {
+                        string xValue = dataGridViewBooks_IME.Rows[i].Cells[1].Value.ToString();
+                        int yValue = Convert.ToInt32(dataGridViewBooks_IME.Rows[i].Cells[3].Value);
+                        // Добавляем данные в график
+                        chartPrice_IME.Series[0].Points.AddXY(xValue, yValue);
+                    }
+                    isGraphDisplayed = true;  
                 }
-                // Обновляем график
-                chartPrice_IME.Update();
-            
+
             }
             catch
             {
@@ -136,6 +138,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
 
         private void buttonChart2_IME_Click(object sender, EventArgs e)
         {
+            chartMaxMinAvg_IME.Series[0].Points.Clear();
             int columnIndex = 3;
             int maxCellValue = int.MinValue;
             int minCellValue = int.MaxValue;
@@ -190,6 +193,48 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
         private void buttonChart2_IME_MouseEnter(object sender, EventArgs e)
         {
             toolTipButton_IME.ToolTipTitle = "График max, min и avg цена";
+        }
+
+        private void dataGridViewBooks_IME_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
+        private void dataGridViewBooks_IME_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void chartPrice_IME_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
+        private void chartPrice_IME_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
+        }
+
+        private void chartMaxMinAvg_IME_MouseDown(object sender, MouseEventArgs e)
+        {
+            lastPoint = new Point(e.X, e.Y);
+        }
+
+        private void chartMaxMinAvg_IME_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                this.Left += e.X - lastPoint.X;
+                this.Top += e.Y - lastPoint.Y;
+            }
         }
     }
 }
