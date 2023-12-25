@@ -48,6 +48,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // textBoxInstructions_IME
             // 
+            this.textBoxInstructions_IME.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBoxInstructions_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxInstructions_IME.Location = new System.Drawing.Point(334, 21);
             this.textBoxInstructions_IME.Multiline = true;
