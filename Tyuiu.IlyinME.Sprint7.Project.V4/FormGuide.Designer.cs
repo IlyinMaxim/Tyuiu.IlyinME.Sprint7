@@ -55,6 +55,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.textBoxInstructions_IME.ReadOnly = true;
             this.textBoxInstructions_IME.Size = new System.Drawing.Size(486, 332);
             this.textBoxInstructions_IME.TabIndex = 1;
+            this.textBoxInstructions_IME.TabStop = false;
             this.textBoxInstructions_IME.Text = resources.GetString("textBoxInstructions_IME.Text");
             // 
             // buttonOK_IME
