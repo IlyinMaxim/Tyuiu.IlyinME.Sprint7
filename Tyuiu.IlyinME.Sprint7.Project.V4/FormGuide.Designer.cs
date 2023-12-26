@@ -30,21 +30,11 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGuide));
-            this.pictureBoxGuide_IME = new System.Windows.Forms.PictureBox();
             this.textBoxInstructions_IME = new System.Windows.Forms.TextBox();
             this.buttonOK_IME = new System.Windows.Forms.Button();
+            this.pictureBoxGuide_IME = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxGuide_IME)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBoxGuide_IME
-            // 
-            this.pictureBoxGuide_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.instructions;
-            this.pictureBoxGuide_IME.Location = new System.Drawing.Point(12, 21);
-            this.pictureBoxGuide_IME.Name = "pictureBoxGuide_IME";
-            this.pictureBoxGuide_IME.Size = new System.Drawing.Size(286, 332);
-            this.pictureBoxGuide_IME.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxGuide_IME.TabIndex = 0;
-            this.pictureBoxGuide_IME.TabStop = false;
             // 
             // textBoxInstructions_IME
             // 
@@ -54,10 +44,12 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.textBoxInstructions_IME.Multiline = true;
             this.textBoxInstructions_IME.Name = "textBoxInstructions_IME";
             this.textBoxInstructions_IME.ReadOnly = true;
-            this.textBoxInstructions_IME.Size = new System.Drawing.Size(486, 332);
+            this.textBoxInstructions_IME.Size = new System.Drawing.Size(486, 368);
             this.textBoxInstructions_IME.TabIndex = 1;
             this.textBoxInstructions_IME.TabStop = false;
             this.textBoxInstructions_IME.Text = resources.GetString("textBoxInstructions_IME.Text");
+            this.textBoxInstructions_IME.MouseDown += new System.Windows.Forms.MouseEventHandler(this.textBoxInstructions_IME_MouseDown);
+            this.textBoxInstructions_IME.MouseMove += new System.Windows.Forms.MouseEventHandler(this.textBoxInstructions_IME_MouseMove);
             // 
             // buttonOK_IME
             // 
@@ -69,6 +61,18 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.buttonOK_IME.Text = "Ок";
             this.buttonOK_IME.UseVisualStyleBackColor = true;
             this.buttonOK_IME.Click += new System.EventHandler(this.buttonOK_IME_Click);
+            // 
+            // pictureBoxGuide_IME
+            // 
+            this.pictureBoxGuide_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.instructions;
+            this.pictureBoxGuide_IME.Location = new System.Drawing.Point(12, 21);
+            this.pictureBoxGuide_IME.Name = "pictureBoxGuide_IME";
+            this.pictureBoxGuide_IME.Size = new System.Drawing.Size(286, 368);
+            this.pictureBoxGuide_IME.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxGuide_IME.TabIndex = 0;
+            this.pictureBoxGuide_IME.TabStop = false;
+            this.pictureBoxGuide_IME.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxGuide_IME_MouseDown);
+            this.pictureBoxGuide_IME.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxGuide_IME_MouseMove);
             // 
             // FormGuide
             // 

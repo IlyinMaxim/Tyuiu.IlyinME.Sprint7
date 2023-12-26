@@ -42,13 +42,8 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.panelUpStats_IME = new System.Windows.Forms.Panel();
             this.labelTotal_IME = new System.Windows.Forms.Label();
             this.textBoxTotal_IME = new System.Windows.Forms.TextBox();
-            this.buttonTotal_IME = new System.Windows.Forms.Button();
             this.labelSum_IME = new System.Windows.Forms.Label();
             this.textBoxSum_IME = new System.Windows.Forms.TextBox();
-            this.buttonSumma_IME = new System.Windows.Forms.Button();
-            this.buttonChart2_IME = new System.Windows.Forms.Button();
-            this.buttonChart1_IME = new System.Windows.Forms.Button();
-            this.buttonDone_IME = new System.Windows.Forms.Button();
             this.panelAllStats_IME = new System.Windows.Forms.Panel();
             this.dataGridViewBooks_IME = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -63,6 +58,11 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.chartPrice_IME = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.openFileDialogTask_IME = new System.Windows.Forms.OpenFileDialog();
             this.toolTipButton_IME = new System.Windows.Forms.ToolTip(this.components);
+            this.buttonTotal_IME = new System.Windows.Forms.Button();
+            this.buttonSumma_IME = new System.Windows.Forms.Button();
+            this.buttonChart2_IME = new System.Windows.Forms.Button();
+            this.buttonChart1_IME = new System.Windows.Forms.Button();
+            this.buttonDone_IME = new System.Windows.Forms.Button();
             this.panelUpStats_IME.SuspendLayout();
             this.panelAllStats_IME.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBooks_IME)).BeginInit();
@@ -74,7 +74,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // panelUpStats_IME
             // 
-            this.panelUpStats_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.panelUpStats_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panelUpStats_IME.Controls.Add(this.labelTotal_IME);
             this.panelUpStats_IME.Controls.Add(this.textBoxTotal_IME);
             this.panelUpStats_IME.Controls.Add(this.buttonTotal_IME);
@@ -110,21 +110,6 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.textBoxTotal_IME.Size = new System.Drawing.Size(123, 20);
             this.textBoxTotal_IME.TabIndex = 6;
             // 
-            // buttonTotal_IME
-            // 
-            this.buttonTotal_IME.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonTotal_IME.FlatAppearance.BorderSize = 0;
-            this.buttonTotal_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonTotal_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.total;
-            this.buttonTotal_IME.Location = new System.Drawing.Point(865, 25);
-            this.buttonTotal_IME.Name = "buttonTotal_IME";
-            this.buttonTotal_IME.Size = new System.Drawing.Size(65, 53);
-            this.buttonTotal_IME.TabIndex = 5;
-            this.toolTipButton_IME.SetToolTip(this.buttonTotal_IME, "Количество книг в библиотеке");
-            this.buttonTotal_IME.UseVisualStyleBackColor = true;
-            this.buttonTotal_IME.Click += new System.EventHandler(this.buttonTotal_IME_Click);
-            this.buttonTotal_IME.MouseEnter += new System.EventHandler(this.buttonTotal_IME_MouseEnter);
-            // 
             // labelSum_IME
             // 
             this.labelSum_IME.AutoSize = true;
@@ -144,77 +129,6 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.textBoxSum_IME.Size = new System.Drawing.Size(118, 20);
             this.textBoxSum_IME.TabIndex = 3;
             // 
-            // buttonSumma_IME
-            // 
-            this.buttonSumma_IME.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonSumma_IME.FlatAppearance.BorderSize = 0;
-            this.buttonSumma_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonSumma_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.summa1;
-            this.buttonSumma_IME.Location = new System.Drawing.Point(554, 31);
-            this.buttonSumma_IME.Name = "buttonSumma_IME";
-            this.buttonSumma_IME.Size = new System.Drawing.Size(52, 47);
-            this.buttonSumma_IME.TabIndex = 2;
-            this.toolTipButton_IME.SetToolTip(this.buttonSumma_IME, "Сумма цен книг\r\n");
-            this.buttonSumma_IME.UseVisualStyleBackColor = true;
-            this.buttonSumma_IME.Click += new System.EventHandler(this.buttonSumma_IME_Click_1);
-            this.buttonSumma_IME.MouseEnter += new System.EventHandler(this.buttonSumma_IME_MouseEnter);
-            // 
-            // buttonChart2_IME
-            // 
-            this.buttonChart2_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.buttonChart2_IME.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonChart2_IME.FlatAppearance.BorderSize = 0;
-            this.buttonChart2_IME.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonChart2_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonChart2_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonChart2_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.Chartmaxminavg;
-            this.buttonChart2_IME.Location = new System.Drawing.Point(291, 3);
-            this.buttonChart2_IME.Name = "buttonChart2_IME";
-            this.buttonChart2_IME.Size = new System.Drawing.Size(110, 95);
-            this.buttonChart2_IME.TabIndex = 1;
-            this.toolTipButton_IME.SetToolTip(this.buttonChart2_IME, "Создает график \"Max, min и средняя цена\"\r\nИспоьлуя данные из таблицы -_-\r\n");
-            this.buttonChart2_IME.UseVisualStyleBackColor = false;
-            this.buttonChart2_IME.Click += new System.EventHandler(this.buttonChart2_IME_Click);
-            this.buttonChart2_IME.MouseEnter += new System.EventHandler(this.buttonChart2_IME_MouseEnter);
-            // 
-            // buttonChart1_IME
-            // 
-            this.buttonChart1_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.buttonChart1_IME.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonChart1_IME.FlatAppearance.BorderSize = 0;
-            this.buttonChart1_IME.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonChart1_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonChart1_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonChart1_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.ChartnamePrice;
-            this.buttonChart1_IME.Location = new System.Drawing.Point(142, 4);
-            this.buttonChart1_IME.Name = "buttonChart1_IME";
-            this.buttonChart1_IME.Size = new System.Drawing.Size(115, 94);
-            this.buttonChart1_IME.TabIndex = 1;
-            this.toolTipButton_IME.SetToolTip(this.buttonChart1_IME, "Создает график \"Название книги и её цена\"\r\nИспоьлуя данные из таблицы :)");
-            this.buttonChart1_IME.UseVisualStyleBackColor = false;
-            this.buttonChart1_IME.Click += new System.EventHandler(this.buttonChart1_IME_Click);
-            this.buttonChart1_IME.MouseEnter += new System.EventHandler(this.buttonChart1_IME_MouseEnter);
-            // 
-            // buttonDone_IME
-            // 
-            this.buttonDone_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.buttonDone_IME.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDone_IME.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.buttonDone_IME.FlatAppearance.BorderSize = 0;
-            this.buttonDone_IME.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonDone_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDone_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonDone_IME.ForeColor = System.Drawing.Color.White;
-            this.buttonDone_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.table;
-            this.buttonDone_IME.Location = new System.Drawing.Point(3, 4);
-            this.buttonDone_IME.Name = "buttonDone_IME";
-            this.buttonDone_IME.Size = new System.Drawing.Size(102, 93);
-            this.buttonDone_IME.TabIndex = 0;
-            this.toolTipButton_IME.SetToolTip(this.buttonDone_IME, "Выводит данные из файла в таблицу\r\n");
-            this.buttonDone_IME.UseVisualStyleBackColor = false;
-            this.buttonDone_IME.Click += new System.EventHandler(this.buttonDone_IME_Click);
-            this.buttonDone_IME.MouseEnter += new System.EventHandler(this.buttonDone_IME_MouseEnter);
-            // 
             // panelAllStats_IME
             // 
             this.panelAllStats_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -230,7 +144,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // dataGridViewBooks_IME
             // 
             this.dataGridViewBooks_IME.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridViewBooks_IME.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dataGridViewBooks_IME.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dataGridViewBooks_IME.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBooks_IME.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -376,6 +290,92 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.toolTipButton_IME.IsBalloon = true;
             this.toolTipButton_IME.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             this.toolTipButton_IME.ToolTipTitle = "Подсказка";
+            // 
+            // buttonTotal_IME
+            // 
+            this.buttonTotal_IME.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonTotal_IME.FlatAppearance.BorderSize = 0;
+            this.buttonTotal_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTotal_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.total;
+            this.buttonTotal_IME.Location = new System.Drawing.Point(865, 25);
+            this.buttonTotal_IME.Name = "buttonTotal_IME";
+            this.buttonTotal_IME.Size = new System.Drawing.Size(65, 53);
+            this.buttonTotal_IME.TabIndex = 5;
+            this.toolTipButton_IME.SetToolTip(this.buttonTotal_IME, "Количество книг в библиотеке");
+            this.buttonTotal_IME.UseVisualStyleBackColor = true;
+            this.buttonTotal_IME.Click += new System.EventHandler(this.buttonTotal_IME_Click);
+            this.buttonTotal_IME.MouseEnter += new System.EventHandler(this.buttonTotal_IME_MouseEnter);
+            // 
+            // buttonSumma_IME
+            // 
+            this.buttonSumma_IME.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonSumma_IME.FlatAppearance.BorderSize = 0;
+            this.buttonSumma_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSumma_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.summa1;
+            this.buttonSumma_IME.Location = new System.Drawing.Point(554, 31);
+            this.buttonSumma_IME.Name = "buttonSumma_IME";
+            this.buttonSumma_IME.Size = new System.Drawing.Size(52, 47);
+            this.buttonSumma_IME.TabIndex = 2;
+            this.toolTipButton_IME.SetToolTip(this.buttonSumma_IME, "Сумма цен книг\r\n");
+            this.buttonSumma_IME.UseVisualStyleBackColor = true;
+            this.buttonSumma_IME.Click += new System.EventHandler(this.buttonSumma_IME_Click_1);
+            this.buttonSumma_IME.MouseEnter += new System.EventHandler(this.buttonSumma_IME_MouseEnter);
+            // 
+            // buttonChart2_IME
+            // 
+            this.buttonChart2_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonChart2_IME.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonChart2_IME.FlatAppearance.BorderSize = 0;
+            this.buttonChart2_IME.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonChart2_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChart2_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonChart2_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.Chartmaxminavg1;
+            this.buttonChart2_IME.Location = new System.Drawing.Point(291, 16);
+            this.buttonChart2_IME.Name = "buttonChart2_IME";
+            this.buttonChart2_IME.Size = new System.Drawing.Size(82, 74);
+            this.buttonChart2_IME.TabIndex = 1;
+            this.toolTipButton_IME.SetToolTip(this.buttonChart2_IME, "Создает график \"Max, min и средняя цена\"\r\nИспоьлуя данные из таблицы -_-\r\n");
+            this.buttonChart2_IME.UseVisualStyleBackColor = false;
+            this.buttonChart2_IME.Click += new System.EventHandler(this.buttonChart2_IME_Click);
+            this.buttonChart2_IME.MouseEnter += new System.EventHandler(this.buttonChart2_IME_MouseEnter);
+            // 
+            // buttonChart1_IME
+            // 
+            this.buttonChart1_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonChart1_IME.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonChart1_IME.FlatAppearance.BorderSize = 0;
+            this.buttonChart1_IME.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonChart1_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonChart1_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonChart1_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.ChartnamePrice1;
+            this.buttonChart1_IME.Location = new System.Drawing.Point(141, 16);
+            this.buttonChart1_IME.Name = "buttonChart1_IME";
+            this.buttonChart1_IME.Size = new System.Drawing.Size(94, 74);
+            this.buttonChart1_IME.TabIndex = 1;
+            this.toolTipButton_IME.SetToolTip(this.buttonChart1_IME, "Создает график \"Название книги и её цена\"\r\nИспоьлуя данные из таблицы :)");
+            this.buttonChart1_IME.UseVisualStyleBackColor = false;
+            this.buttonChart1_IME.Click += new System.EventHandler(this.buttonChart1_IME_Click);
+            this.buttonChart1_IME.MouseEnter += new System.EventHandler(this.buttonChart1_IME_MouseEnter);
+            // 
+            // buttonDone_IME
+            // 
+            this.buttonDone_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonDone_IME.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDone_IME.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.buttonDone_IME.FlatAppearance.BorderSize = 0;
+            this.buttonDone_IME.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonDone_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDone_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonDone_IME.ForeColor = System.Drawing.Color.White;
+            this.buttonDone_IME.Image = global::Tyuiu.IlyinME.Sprint7.Project.V4.Properties.Resources.table1;
+            this.buttonDone_IME.Location = new System.Drawing.Point(3, 16);
+            this.buttonDone_IME.Name = "buttonDone_IME";
+            this.buttonDone_IME.Size = new System.Drawing.Size(93, 74);
+            this.buttonDone_IME.TabIndex = 0;
+            this.toolTipButton_IME.SetToolTip(this.buttonDone_IME, "Выводит данные из файла в таблицу\r\n");
+            this.buttonDone_IME.UseVisualStyleBackColor = false;
+            this.buttonDone_IME.Click += new System.EventHandler(this.buttonDone_IME_Click);
+            this.buttonDone_IME.MouseEnter += new System.EventHandler(this.buttonDone_IME_MouseEnter);
             // 
             // FormStats
             // 

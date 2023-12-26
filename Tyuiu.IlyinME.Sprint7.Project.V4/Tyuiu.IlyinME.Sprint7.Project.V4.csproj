@@ -146,6 +146,10 @@
     <Content Include="images\table.png" />
     <Content Include="images\total.png" />
     <Content Include="images\user.png" />
+    <None Include="Resources\Chartmaxminavg.png" />
+    <None Include="Resources\ChartnamePrice.png" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\table.png" />
     <None Include="Resources\total.png" />
     <None Include="Resources\summa.png" />
     <None Include="Resources\instructions.png" />
