@@ -242,12 +242,12 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
         {
             if (sortDirection == ListSortDirection.Ascending)
             {
-                dataGridViewBooks_IME.Sort(dataGridViewBooks_IME.Columns[textBoxSort_IME.Text], ListSortDirection.Descending);
+                dataGridViewBooks_IME.Sort(dataGridViewBooks_IME.Columns[textBoxSort_IME.Text.ToString()], ListSortDirection.Descending);
                 sortDirection = ListSortDirection.Descending;
             }
             else
             {
-                dataGridViewBooks_IME.Sort(dataGridViewBooks_IME.Columns[textBoxSort_IME.Text], ListSortDirection.Ascending);
+                dataGridViewBooks_IME.Sort(dataGridViewBooks_IME.Columns[textBoxSort_IME.Text.ToString()], ListSortDirection.Ascending);
                 sortDirection = ListSortDirection.Ascending;
             }
         }
@@ -301,6 +301,121 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
         {
             FormGuide formGuide = new FormGuide();
             formGuide.ShowDialog();
+        }
+
+        private void buttonFilterAvtor_IME_Click(object sender, EventArgs e)
+        {
+            string filterValue = textBoxAvtor1_IME.Text;
+            foreach (DataGridViewRow row in dataGridViewBooks_IME.Rows)
+            {
+                string cellValue = row.Cells[0].Value.ToString();
+
+                if (cellValue.Contains(filterValue))
+                {
+                    row.Visible = true;
+                }
+                else
+                {
+                    row.Visible = false;
+                }
+            }
+        }
+
+        private void buttonFilterBook_IME_Click(object sender, EventArgs e)
+        {
+            string filterValue = textBoxBook_IME.Text;
+            foreach (DataGridViewRow row in dataGridViewBooks_IME.Rows)
+            {
+                string cellValue = row.Cells[1].Value.ToString();
+
+                if (cellValue.Contains(filterValue))
+                {
+                    row.Visible = true;
+                }
+                else
+                {
+                    row.Visible = false;
+                }
+            }
+        }
+
+        private void buttonFilterYars_IME_Click(object sender, EventArgs e)
+        {
+            string filterValue = textBoxYears1_IME.Text;
+            foreach (DataGridViewRow row in dataGridViewBooks_IME.Rows)
+            {
+                string cellValue = row.Cells[2].Value.ToString();
+
+                if (cellValue.Contains(filterValue))
+                {
+                    row.Visible = true;
+                }
+                else
+                {
+                    row.Visible = false;
+                }
+            }
+        }
+
+        private void buttonFilterPrice_IME_Click(object sender, EventArgs e)
+        {
+            string filterValue = textBoxPrice1_IME.Text;
+            foreach (DataGridViewRow row in dataGridViewBooks_IME.Rows)
+            {
+                string cellValue = row.Cells[3].Value.ToString();
+
+                if (cellValue.Contains(filterValue))
+                {
+                    row.Visible = true;
+                }
+                else
+                {
+                    row.Visible = false;
+                }
+            }
+        }
+
+        private void buttonFilterNew_IME_Click(object sender, EventArgs e)
+        {
+            string filterValue = textBoxNew1_IME.Text;
+            foreach (DataGridViewRow row in dataGridViewBooks_IME.Rows)
+            {
+                string cellValue = row.Cells[4].Value.ToString();
+
+                if (cellValue.Contains(filterValue))
+                {
+                    row.Visible = true;
+                }
+                else
+                {
+                    row.Visible = false;
+                }
+            }
+        }
+
+        private void buttonFilterAvtor_IME_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_IME.ToolTipTitle = "ФильтрА";
+        }
+
+        private void buttonFilterBook_IME_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_IME.ToolTipTitle = "ФильтрК";
+        }
+
+        private void buttonFilterYars_IME_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_IME.ToolTipTitle = "ФильтрГ";
+        }
+
+        private void buttonFilterPrice_IME_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_IME.ToolTipTitle = "ФильтрЦ";
+        }
+
+        private void buttonFilterNew_IME_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_IME.ToolTipTitle = "ФильтрИ";
         }
     }
 }

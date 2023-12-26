@@ -142,8 +142,12 @@
     <Content Include="images\remove.png" />
     <Content Include="images\save.png" />
     <Content Include="images\search.png" />
+    <Content Include="images\summa.png" />
     <Content Include="images\table.png" />
+    <Content Include="images\total.png" />
     <Content Include="images\user.png" />
+    <None Include="Resources\total.png" />
+    <None Include="Resources\summa.png" />
     <None Include="Resources\instructions.png" />
     <None Include="Resources\remove.png" />
     <None Include="Resources\add.png" />

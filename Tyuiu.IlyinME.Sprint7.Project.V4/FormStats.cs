@@ -20,6 +20,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             openFileDialogTask_IME.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Всефайлы(*.*)|*.*";
             //saveFileDialogMatrix_IME.Filter = "Значения, разделенные запятыми(*.csv)|*.csv|Всефайлы(*.*)|*.*";
         }
+        private bool isGraphDisplayed = false;
         static string openFilePath;
         DataService ds = new DataService();
         static string[,] array;
@@ -112,7 +113,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
                 MessageBox.Show("Файл не выбран!", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        private bool isGraphDisplayed = false;
+        
         private void buttonChart1_IME_Click(object sender, EventArgs e)
         {
             try
@@ -235,6 +236,37 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
                 this.Left += e.X - lastPoint.X;
                 this.Top += e.Y - lastPoint.Y;
             }
+        }
+        private void buttonSumma_IME_Click_1(object sender, EventArgs e)
+        {
+            int sum = 0;      
+            for (int i = 0; i < dataGridViewBooks_IME.Rows.Count; ++i)
+            {
+                string value = dataGridViewBooks_IME.Rows[i].Cells[3].Value.ToString();
+                int number;
+
+                if (int.TryParse(value, out number))
+                {
+                    sum += number;
+                }
+            }
+            textBoxSum_IME.Text = sum.ToString();
+        }
+
+        private void buttonTotal_IME_Click(object sender, EventArgs e)
+        {
+            int rowCount = dataGridViewBooks_IME.Rows.Count;
+            textBoxTotal_IME.Text = rowCount.ToString();
+        }
+
+        private void buttonSumma_IME_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_IME.ToolTipTitle = "Сумма";
+        }
+
+        private void buttonTotal_IME_MouseEnter(object sender, EventArgs e)
+        {
+            toolTipButton_IME.ToolTipTitle = "Количество";
         }
     }
 }

@@ -158,6 +158,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.MaximizeBox = false;
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Регистрация";
             this.panelMenu_IME.ResumeLayout(false);
             this.panelMenu_IME.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLock_IME)).EndInit();
