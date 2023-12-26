@@ -53,13 +53,16 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // buttonOK_IME
             // 
+            this.buttonOK_IME.BackColor = System.Drawing.Color.Silver;
+            this.buttonOK_IME.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonOK_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOK_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOK_IME.Location = new System.Drawing.Point(706, 395);
             this.buttonOK_IME.Name = "buttonOK_IME";
             this.buttonOK_IME.Size = new System.Drawing.Size(114, 35);
             this.buttonOK_IME.TabIndex = 2;
             this.buttonOK_IME.Text = "Ок";
-            this.buttonOK_IME.UseVisualStyleBackColor = true;
+            this.buttonOK_IME.UseVisualStyleBackColor = false;
             this.buttonOK_IME.Click += new System.EventHandler(this.buttonOK_IME_Click);
             // 
             // pictureBoxGuide_IME

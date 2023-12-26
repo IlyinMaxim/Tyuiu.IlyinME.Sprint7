@@ -52,7 +52,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             this.labelInfo_IME.AutoSize = true;
             this.labelInfo_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelInfo_IME.ForeColor = System.Drawing.Color.DarkViolet;
+            this.labelInfo_IME.ForeColor = System.Drawing.Color.Black;
             this.labelInfo_IME.Location = new System.Drawing.Point(316, 13);
             this.labelInfo_IME.Name = "labelInfo_IME";
             this.labelInfo_IME.Size = new System.Drawing.Size(384, 180);
@@ -63,7 +63,8 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // buttonOK_IME
             // 
-            this.buttonOK_IME.BackColor = System.Drawing.Color.Cyan;
+            this.buttonOK_IME.BackColor = System.Drawing.Color.Silver;
+            this.buttonOK_IME.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonOK_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonOK_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.buttonOK_IME.Location = new System.Drawing.Point(626, 261);

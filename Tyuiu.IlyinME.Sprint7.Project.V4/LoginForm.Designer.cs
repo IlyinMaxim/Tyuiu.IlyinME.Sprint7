@@ -46,7 +46,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // panelMenu_IME
             // 
-            this.panelMenu_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(100)))), ((int)(((byte)(245)))));
+            this.panelMenu_IME.BackColor = System.Drawing.Color.Gray;
             this.panelMenu_IME.Controls.Add(this.buttonIn_IME);
             this.panelMenu_IME.Controls.Add(this.textBoxParol_IME);
             this.panelMenu_IME.Controls.Add(this.textBoxLogin_IME);
@@ -64,7 +64,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // buttonIn_IME
             // 
-            this.buttonIn_IME.BackColor = System.Drawing.Color.Green;
+            this.buttonIn_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonIn_IME.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonIn_IME.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonIn_IME.FlatAppearance.BorderSize = 2;
@@ -72,7 +72,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.buttonIn_IME.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(22)))), ((int)(((byte)(117)))));
             this.buttonIn_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonIn_IME.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.buttonIn_IME.ForeColor = System.Drawing.Color.White;
+            this.buttonIn_IME.ForeColor = System.Drawing.Color.Black;
             this.buttonIn_IME.Location = new System.Drawing.Point(130, 348);
             this.buttonIn_IME.Name = "buttonIn_IME";
             this.buttonIn_IME.Size = new System.Drawing.Size(171, 58);
@@ -134,10 +134,11 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // labelRegister_IME
             // 
+            this.labelRegister_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.labelRegister_IME.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.labelRegister_IME.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelRegister_IME.Font = new System.Drawing.Font("Comic Sans MS", 32.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRegister_IME.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(223)))), ((int)(((byte)(223)))));
+            this.labelRegister_IME.ForeColor = System.Drawing.Color.Black;
             this.labelRegister_IME.Location = new System.Drawing.Point(0, 0);
             this.labelRegister_IME.Name = "labelRegister_IME";
             this.labelRegister_IME.Size = new System.Drawing.Size(428, 100);

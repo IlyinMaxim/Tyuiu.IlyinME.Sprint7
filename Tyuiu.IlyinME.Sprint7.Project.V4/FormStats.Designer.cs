@@ -74,7 +74,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // panelUpStats_IME
             // 
-            this.panelUpStats_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panelUpStats_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panelUpStats_IME.Controls.Add(this.labelTotal_IME);
             this.panelUpStats_IME.Controls.Add(this.textBoxTotal_IME);
             this.panelUpStats_IME.Controls.Add(this.buttonTotal_IME);
@@ -144,7 +144,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // dataGridViewBooks_IME
             // 
             this.dataGridViewBooks_IME.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridViewBooks_IME.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dataGridViewBooks_IME.BackgroundColor = System.Drawing.Color.Silver;
             this.dataGridViewBooks_IME.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBooks_IME.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -274,7 +274,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.chartPrice_IME.TabIndex = 0;
             this.chartPrice_IME.Text = "chart1";
             title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            title2.ForeColor = System.Drawing.Color.Green;
+            title2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             title2.Name = "Title1";
             title2.Text = "Название книги и её цена";
             this.chartPrice_IME.Titles.Add(title2);
@@ -323,7 +323,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // buttonChart2_IME
             // 
-            this.buttonChart2_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonChart2_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonChart2_IME.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonChart2_IME.FlatAppearance.BorderSize = 0;
             this.buttonChart2_IME.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -341,7 +341,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // buttonChart1_IME
             // 
-            this.buttonChart1_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonChart1_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonChart1_IME.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonChart1_IME.FlatAppearance.BorderSize = 0;
             this.buttonChart1_IME.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -359,7 +359,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // buttonDone_IME
             // 
-            this.buttonDone_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonDone_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonDone_IME.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonDone_IME.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.buttonDone_IME.FlatAppearance.BorderSize = 0;

@@ -30,9 +30,9 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.panelMenuUp_IME = new System.Windows.Forms.Panel();
             this.labelName_IME = new System.Windows.Forms.Label();
@@ -104,7 +104,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // panelMenuUp_IME
             // 
-            this.panelMenuUp_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelMenuUp_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panelMenuUp_IME.Controls.Add(this.buttonSave_IME);
             this.panelMenuUp_IME.Controls.Add(this.pictureBoxBooksMenu_IME);
             this.panelMenuUp_IME.Controls.Add(this.labelName_IME);
@@ -162,7 +162,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // panelMenuLeft_IME
             // 
-            this.panelMenuLeft_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelMenuLeft_IME.BackColor = System.Drawing.Color.Silver;
             this.panelMenuLeft_IME.Controls.Add(this.buttonRemove_IME);
             this.panelMenuLeft_IME.Controls.Add(this.buttonAdd_IME);
             this.panelMenuLeft_IME.Controls.Add(this.groupBoxAdd_IME);
@@ -176,7 +176,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // groupBoxAdd_IME
             // 
-            this.groupBoxAdd_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.groupBoxAdd_IME.BackColor = System.Drawing.Color.Silver;
             this.groupBoxAdd_IME.Controls.Add(this.groupBoxFilter_IME);
             this.groupBoxAdd_IME.Controls.Add(this.buttonSort_IME);
             this.groupBoxAdd_IME.Controls.Add(this.labelSort_IME);
@@ -517,7 +517,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // panelMenuRight_IME
             // 
-            this.panelMenuRight_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelMenuRight_IME.BackColor = System.Drawing.Color.Silver;
             this.panelMenuRight_IME.Controls.Add(this.buttonOpenTab_IME);
             this.panelMenuRight_IME.Controls.Add(this.labelAutor_IME);
             this.panelMenuRight_IME.Controls.Add(this.textBoxAutor_IME);
@@ -553,15 +553,15 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.dataGridViewBooks_IME.AllowUserToAddRows = false;
             this.dataGridViewBooks_IME.AllowUserToDeleteRows = false;
             this.dataGridViewBooks_IME.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridViewBooks_IME.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBooks_IME.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewBooks_IME.BackgroundColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBooks_IME.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewBooks_IME.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewBooks_IME.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Автор,
@@ -570,26 +570,26 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             this.Цена,
             this.Издание,
             this.Аннотация});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewBooks_IME.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewBooks_IME.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridViewBooks_IME.GridColor = System.Drawing.Color.DimGray;
             this.dataGridViewBooks_IME.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewBooks_IME.Name = "dataGridViewBooks_IME";
             this.dataGridViewBooks_IME.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewBooks_IME.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewBooks_IME.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewBooks_IME.Size = new System.Drawing.Size(634, 458);
             this.dataGridViewBooks_IME.TabIndex = 0;
             this.dataGridViewBooks_IME.MouseDown += new System.Windows.Forms.MouseEventHandler(this.dataGridViewBooks_IME_MouseDown);
@@ -765,7 +765,7 @@ namespace Tyuiu.IlyinME.Sprint7.Project.V4
             // 
             // buttonInfo_IME
             // 
-            this.buttonInfo_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.buttonInfo_IME.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.buttonInfo_IME.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonInfo_IME.FlatAppearance.BorderSize = 0;
             this.buttonInfo_IME.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
